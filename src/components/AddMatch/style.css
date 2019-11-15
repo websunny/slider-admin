@@ -1,0 +1,8 @@
+.add-match{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.add-match .ant-input-group-wrapper{
+    margin-bottom: 10px;
+}
