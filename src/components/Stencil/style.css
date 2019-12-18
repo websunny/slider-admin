@@ -1,0 +1,182 @@
+* {
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration:none;
+}
+.container {
+    width:1198px;
+    height:398px;
+    position:relative;
+    margin: auto;
+}
+.news-box {
+    width:570px;
+    display:inline-block;
+    height:385px;
+    overflow:hidden;
+}
+.news-box .news-item {
+    width:175px;
+    margin-left:15px;
+    float:left;
+    cursor:pointer;
+}
+.news-box .news-item .img-box {
+    width:175px;
+    height:105px;
+    overflow:hidden
+}
+.news-box .news-item img {
+    width:100%;
+    height:100%;
+    transition:all .6s;
+}
+.news-box .news-item img:hover {
+    transform:scale(1.4);
+}
+.news-box .news-item .news-item-title {
+    font-size:12px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    margin-top:12px;
+    margin-bottom:22px;
+    overflow:hidden;
+    height:32px;
+    cursor:pointer;
+}
+/* .news-box .news-item .news-item-title:hover {
+    color:<%=htmlConfig.newsTitleHoverColor%>
+} */
+.slick {
+    position:relative;
+    width:590px;
+    height:385px;
+    overflow:hidden;
+    margin:15px 10px 0 15px;
+    display:inline-block
+}
+.slick .wrap {
+    position:absolute;
+    width:3540px;
+    height:355px;
+    z-index:1
+}
+.slick .wrap .banner {
+    float:left;
+    width:590px;
+    height:355px;
+    position:relative;
+    cursor:pointer
+}
+.slick .wrap .banner img {
+    width:590px;
+    height:355px
+}
+.slick .wrap .banner .content {
+    position:absolute;
+    width:590px;
+    height:80px;
+    background:rgba(0, 0, 0, 0.75);
+    bottom:0;
+    padding:13px 0 0 21px
+}
+.slick .wrap .content .title {
+    font-size:21px;
+    font-family:MicrosoftYaHei-Bold;
+    font-weight:bold;
+    max-width:550px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis
+}
+.slick .wrap .content .sub-title {
+    font-size:16px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    margin-top:6px;
+    max-width:550px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis
+}
+.slick .buttons {
+    position:absolute;
+    left:247px;
+    bottom:10px;
+    z-index:2;
+    height:12px;
+    line-height:12px;
+    cursor:pointer
+}
+.slick .buttons span {
+    margin-right:12px;
+    display:inline-block;
+    width:12px;
+    height:12px;
+    border-radius:50%
+}
+.arrow {
+    position:absolute;
+    border-radius:50%;
+    width:36px;
+    height:36px;
+    z-index:5;
+    top:138px;
+    cursor:pointer;
+    opacity:.5
+}
+.arrow:hover {
+    opacity:.85
+}
+.arrow .icon {
+    width:36px;
+    height:36px
+}
+.arrow_left {
+    left:12px
+}
+.arrow_right {
+    right:12px
+}
+.logo {
+    position:absolute;
+    bottom:0;
+    right:0;
+    height:36px;
+    cursor:pointer;
+    z-index:3
+}
+.logo div {
+    display: inline-block;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color: #fff;
+    height: 36px;
+    line-height: 36px;
+}
+.logo img {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}
+.trapezium {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 36px;
+}
+.trapezium-before {
+    display:block;
+    width:36px;
+    height:36px;
+    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    position: absolute;
+    left: -36px;
+}
+svg path {
+    /* fill: <%=htmlConfig.swiperColor%>; */
+}

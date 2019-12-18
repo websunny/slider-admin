@@ -1,6 +1,12 @@
 .add-match{
+    /* display: flex; */
+}
+.add-match-detail{
     width: 600px;
     margin: 0 auto;
+}
+.add-match-show{
+    transform: scale(0.8)
 }
 
 .add-match .ant-input-group-wrapper{
