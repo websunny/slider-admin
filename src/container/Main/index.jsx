@@ -80,6 +80,7 @@ class Main extends Component {
                     self.setState({
                         htmlCfg:data
                     })
+                    self.getHtml(data.featuredId)
                 }
             })
             .catch(function (error) {
