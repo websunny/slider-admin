@@ -22,7 +22,7 @@ export class List extends Component {
     delMatch=name=>{
         const self = this
         const postData = { matchName:name }
-        axios.post('http://localhost:82/api/delMatch', JSON.stringify(postData))
+        axios.post('http://47.97.57.7/api/delMatch', JSON.stringify(postData))
         .then(function (response) {
             if(response.data){
                 if(response.data.success){
@@ -41,7 +41,7 @@ export class List extends Component {
 
     getMatchList = id => {
         const self =this
-        axios.post(`http://localhost:82/api/getMatchList`)
+        axios.post(`http://47.97.57.7/api/getMatchList`)
             .then(function (response) {
                 console.log(response)
                 if(response.data){
